@@ -11,7 +11,8 @@ html {
   --nasa-blue:  #3A4AC3;
   --nasa-blue:  #2b40d9;
   --nasa-orange:#d9612b;
-  /* --nasa-blue:var(--nasa-orange); */
+  --nasa-red:#d93c2b;
+  --nasa-orange:var(--nasa-red);
   --nasa-dark:  #1B2EC1;
   --nasa-dark:  #152498;
   box-sizing: border-box;
