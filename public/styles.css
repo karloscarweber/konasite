@@ -85,7 +85,7 @@ changelog > p, changelog > li, changelog > a, changelog > date {font-size: 1.25r
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("mdprimer/MDPrimer-Bold.woff2?v=99.99") format("woff2"), url("mdprimer/MDPrimer-Bold.woff?v=99.99") format("woff");
+  src: url("/public/mdprimer/MDPrimer-Bold.woff2?v=99.99") format("woff2"), url("/public/mdprimer/MDPrimer-Bold.woff?v=99.99") format("woff");
 }
 
 .typeface-mdprimer { /* for just using the typeface */
@@ -96,56 +96,56 @@ changelog > p, changelog > li, changelog > a, changelog > date {font-size: 1.25r
 @font-face {
   font-family: 'MDSystem'; font-style: normal; font-display: swap;
   font-weight: 400;
-  src: url("mdsystem/MDSystem-Regular.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Regular.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-Regular.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Regular.woff?v=99.99") format("woff");
 }
 @font-face {
   font-family: 'MDSystem'; font-style: italic; font-display: swap;
   font-weight: 400;
-  src: url("mdsystem/MDSystem-Italic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Italic.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-Italic.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Italic.woff?v=99.99") format("woff");
 }
 
 @font-face {
   font-family: 'MDSystem'; font-style: normal; font-display: swap;
   font-weight: 500;
-  src: url("mdsystem/MDSystem-Medium.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Medium.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-Medium.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Medium.woff?v=99.99") format("woff");
 }
 @font-face {
   font-family: 'MDSystem'; font-style: italic; font-display: swap;
   font-weight: 500;
-  src: url("mdsystem/MDSystem-MediumItalic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-MediumItalic.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-MediumItalic.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-MediumItalic.woff?v=99.99") format("woff");
 }
 
 @font-face {
   font-family: 'MDSystem'; font-style: normal; font-display: swap;
   font-weight: 600;
-  src: url("mdsystem/MDSystem-Dark.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Dark.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-Dark.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Dark.woff?v=99.99") format("woff");
 }
 @font-face {
   font-family: 'MDSystem'; font-style: italic; font-display: swap;
   font-weight: 600;
-  src: url("mdsystem/MDSystem-DarkItalic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-DarkItalic.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-DarkItalic.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-DarkItalic.woff?v=99.99") format("woff");
 }
 
 @font-face {
   font-family: 'MDSystem'; font-style: normal; font-display: swap;
   font-weight: 700;
-  src: url("mdsystem/MDSystem-Bold.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Bold.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-Bold.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Bold.woff?v=99.99") format("woff");
 }
 @font-face {
   font-family: 'MDSystem'; font-style: italic; font-display: swap;
   font-weight: 700;
-  src: url("mdsystem/MDSystem-BoldItalic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-BoldItalic.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-BoldItalic.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-BoldItalic.woff?v=99.99") format("woff");
 }
 
 @font-face {
   font-family: 'MDSystem'; font-style: normal; font-display: swap;
   font-weight: 800;
-  src: url("mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
 }
 @font-face {
   font-family: 'MDSystem'; font-style: italic; font-display: swap;
   font-weight: 800;
-  src: url("mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+  src: url("/public/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
 }
 
 .typeface-mdsystem { /* for just using the typeface */

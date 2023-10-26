@@ -1,17 +1,5 @@
 node_modules/
 .env
-
-# Enhance temp files
-.enhance/
-
-# Generated assets
-public/static.json
-public/browser/
-public/bundles/
-public/pages/
-
-# Architect CloudFormation
-sam.json
-sam.yaml
+_site
 
 .DS_Store
