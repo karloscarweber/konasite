@@ -24,5 +24,8 @@
     </section>
   </footer>
   <script type="module" src="/public/index.js"></script>
+  {% if jekyll.environment == "production" %}
+    <script src="https://tinylytics.app/embed/7hCdM_pSkFaqv_sdzntx.js" defer></script>
+  {% endif %}
 </body>
 </html>
