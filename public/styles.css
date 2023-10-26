@@ -141,7 +141,7 @@ changelog > p, changelog > li, changelog > a, changelog > date {font-size: 1.25r
   src: url("/public/mdsystem/MDSystem-DarkItalic.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-DarkItalic.woff?v=99.99") format("woff");
 }
 
-@font-face {
+/* @font-face {
   font-family: 'MDSystem'; font-style: normal; font-display: swap;
   font-weight: 700;
   src: url("/public/mdsystem/MDSystem-Bold.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Bold.woff?v=99.99") format("woff");
@@ -150,9 +150,9 @@ changelog > p, changelog > li, changelog > a, changelog > date {font-size: 1.25r
   font-family: 'MDSystem'; font-style: italic; font-display: swap;
   font-weight: 700;
   src: url("/public/mdsystem/MDSystem-BoldItalic.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-BoldItalic.woff?v=99.99") format("woff");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: 'MDSystem'; font-style: normal; font-display: swap;
   font-weight: 800;
   src: url("/public/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
@@ -161,7 +161,7 @@ changelog > p, changelog > li, changelog > a, changelog > date {font-size: 1.25r
   font-family: 'MDSystem'; font-style: italic; font-display: swap;
   font-weight: 800;
   src: url("/public/mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("/public/mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
-}
+} */
 
 .typeface-mdsystem { /* for just using the typeface */
   font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
