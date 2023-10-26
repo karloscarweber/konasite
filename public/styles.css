@@ -38,7 +38,7 @@ header {height: 3rem; padding: 0.5rem; width: 100%; display:flex; flex-direction
 header * {margin-bottom: 0;}
 header > h1 {font-size: 2rem; line-height: 3rem;margin-top: auto;margin-bottom: auto;}
 header > h1 > a {font-size:inherit;}
-nav > a {font-size: 1.2rem; line-height: 3rem; margin-left:2rem;margin-top: auto;margin-bottom: auto;}
+nav > a {font-size: 1.2rem; line-height: 3rem; margin-right:2rem;margin-top: auto;margin-bottom: auto;}
 
 /* Typography styles */
 h1, h2 ,h3 { margin-bottom: 1rem;}
