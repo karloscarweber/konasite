@@ -1,0 +1,77 @@
+<main>
+  <section>
+    <h1 style="color:var(--nasa-orange)">Kona</h1>
+    <p class="headliner">A small, fast web language. </p>
+
+    <p>This page is meant to collect examples of html pieces with their styles.</p>
+
+    <a href="/download" class="button">Learn More</a>
+    <a href="/download" class="button outline">DOWNLOAD</a>
+  </section>
+  <section>
+    <p>Kona is meant for the web; HTML, CSS, and JSON are first class citizens. Special literals are made for each, so that you can interleave Kona along with your HTML, CSS, and JSON. Kona offers a simplified templating language similar to mustache.</p>
+  </section>
+
+  <section>
+    <h2>Changelog</h2>
+
+    <changelog data-date="2023-10-23">
+      <date>23rd of October 2023</date>
+      <p>Pushed a new website extolling the virtues of KonaScript live. I hope everyone loves it.</p>
+      <ul>
+        <li>Tried my best.</li>
+        <li>Come so far</li>
+        <li>But in the end.</li>
+        <li>It doesn't even matter.</li>
+      </ul>
+      <p>More things to put on to the fire. Trying my best to just burn it all down.</p>
+    </changelog>
+
+    <changelog data-date="2023-10-23">
+      <date>23rd of October 2023</date>
+      <p>Pushed a new website extolling the virtues of KonaScript live. I hope everyone loves it.</p>
+      <ul>
+        <li>Tried my best.</li>
+        <li>Come so far</li>
+        <li>But in the end.</li>
+        <li>It doesn't even matter.</li>
+      </ul>
+      <p>More things to put on to the fire. Trying my best to just burn it all down.</p>
+    </changelog>
+
+    <p>Kona is meant for the web; HTML, CSS, and JSON are first class citizens. Special literals are made for each, so that you can interleave Kona along with your HTML, CSS, and JSON. Kona offers a simplified templating language similar to mustache.</p>
+  </section>
+  <section>
+    <columns>
+      <well>
+        <p>lorem ipsum dolor sit amit</p>
+        <p>lorem ipsum dolor sit amit</p>
+        <p>lorem ipsum dolor sit amit</p>
+      </well>
+      <well>
+        <p>lorem ipsum dolor sit amit</p>
+      </well>
+    </columns>
+
+<pre><code class="kona-code">  class Element
+    def init(name)
+      @name = name
+    end
+  end
+
+  element = Element.new "Mommy"
+  element << Element.new "Son" // anonymously adds a child element.
+  element.children
+  # > &lt;Collection: 0x600002a58160&gt; {
+  # >   &lt;Element: 0x600002a58140&gt;,
+  # > }
+</code></pre>
+
+    <p>Kona offers simple and extensible meta programming features.</p>
+  </section>
+  <section>
+    <h2>Hello Friends</h2>
+  </section>
+</main>
+<my-footer></my-footer>
+<script type="module" src="/_public/browser/index.mjs"></script>

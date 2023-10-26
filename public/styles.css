@@ -1,0 +1,153 @@
+/* Global styles */
+html {
+  font-family: Lucida-grande, sans-serif;
+  color: #222;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5em;
+  background-color: white;
+  --font-mdsystem: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+  --font-mdprimer: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+  --nasa-blue:  #3A4AC3;
+  --nasa-blue:  #2b40d9;
+  --nasa-orange:#d9612b;
+  /* --nasa-blue:var(--nasa-orange); */
+  --nasa-dark:  #1B2EC1;
+  --nasa-dark:  #152498;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family:var(--font-mdsystem);
+}
+body {margin: 0;padding:0;}
+* {box-sizing:border-box;}
+
+/* Page container styles */
+main { display: flex; flex-direction: column;}
+section{ margin: 2rem; margin-left:auto; margin-right:auto;max-width: 60rem;width:100%; padding-left:1.5rem; padding-right:1.5rem;}
+columns {display: flex; flex-direction: row;gap:1rem;justify-content: space-between;margin-top:1rem;margin-bottom:1rem;}
+columns > * {flex-grow: 1;}
+well {display: flex; flex-direction: column;padding: 1.5rem;border:2px solid var(--nasa-blue);border-radius: 12px;}
+well > :first-child {margin-top:0;}
+well > :last-child {margin-bottom:0;}
+footer {display:flex;height: 30rem;background:var(--nasa-blue);color: white;border-radius:0px 0px 10px 10px;}
+footer > section {display:flex;flex-direction: column-reverse;}
+
+/* Header/menu styles*/
+header {height: 3rem; padding: 0.5rem; width: 100%; display:flex; flex-direction: row; padding-left:1.5rem; padding-right:1.5rem;box-sizing:border-box;}
+header * {margin-bottom: 0;}
+header > h1 {font-size: 2rem; line-height: 3rem;margin-top: auto;margin-bottom: auto;}
+header > h1 > a {font-size:inherit;}
+nav > a {font-size: 1.2rem; line-height: 3rem; margin-left:2rem;margin-top: auto;margin-bottom: auto;}
+
+/* Typography styles */
+h1, h2 ,h3 { margin-bottom: 1rem;}
+p  {margin-bottom: 1em; }
+h1 {font-size: 6rem; line-height: 1em; font-family: var(--font-mdprimer); color:var(--nasa-orange);}
+h2 {font-size: 3rem; line-height: 1.1em; font-family: var(--font-mdprimer);}
+h3 {font-size: 2rem; line-height: 1.1em; font-family: var(--font-mdprimer);}
+.headliner {  font-size: 1.75rem; line-height: 1.5em; font-weight:600;}
+p, a {font-size: 1.5rem; line-height: 1.5em; font-weight:500}
+ul {margin-top:0.5em;margin-bottom:0.5em;}
+li {font-size: 1.25rem; line-height: 1.25em; font-weight:400}
+a {color:var(--nasa-orange); text-decoration: none;}
+a:visited { color: var(--nasa-orange); }
+footer nav > a, footer nav > a:visited {margin-left:0rem; margin-right:2rem;color:white;}
+
+/* Code Styles */
+pre {background:#192535; background: #183153;background:#00347a;
+  border-radius: 1rem;padding:1rem;box-sizing:border-box;}
+pre code {font-size:1.25rem;line-height:1.5em;font-family:menlo, monospace !important;font-weight: 500;}
+pre {
+  --clr-unformatted:#fff;
+  --clr-keyword:    #ff4644;
+  --clr-punctuation:#16db20;
+  --clr-string:     #fbdf00;
+  --clr-comment:    #768089;
+  overflow-x:scroll;
+}
+
+/* Download buttons */
+.button, .button:visited {box-sizing:border-box;padding:0.75rem 1.5rem;color:white;font-family:var(--font-system);font-weight:500;background-color:var(--nasa-orange);text-decoration:none;border-radius:1rem;margin-left:0.5rem;margin-right:0.5rem;display:inline-block;}
+.button:hover {background:var(--nasa-dark);}
+.button.outline, .button.outline:visited {color:var(--nasa-blue);background:transparent;border:2px solid var(--nasa-blue);}
+.button.outline:hover {color:white;background:#00347a;border-color:#00347a;}
+
+/* changelog */
+changelog {display:block;margin-bottom:3rem;}
+changelog date {font-weight:700;}
+changelog date + p { margin-top: 0;}
+changelog > p, changelog > li, changelog > a, changelog > date {font-size: 1.25rem;margin:0.5em;}
+
+/* MD Primer */
+@font-face {
+  font-family: 'MDPrimer';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("mdprimer/MDPrimer-Bold.woff2?v=99.99") format("woff2"), url("mdprimer/MDPrimer-Bold.woff?v=99.99") format("woff");
+}
+
+.typeface-mdprimer { /* for just using the typeface */
+  font-family: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
+}
+
+/* MD System */
+@font-face {
+  font-family: 'MDSystem'; font-style: normal; font-display: swap;
+  font-weight: 400;
+  src: url("mdsystem/MDSystem-Regular.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Regular.woff?v=99.99") format("woff");
+}
+@font-face {
+  font-family: 'MDSystem'; font-style: italic; font-display: swap;
+  font-weight: 400;
+  src: url("mdsystem/MDSystem-Italic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Italic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+  font-family: 'MDSystem'; font-style: normal; font-display: swap;
+  font-weight: 500;
+  src: url("mdsystem/MDSystem-Medium.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Medium.woff?v=99.99") format("woff");
+}
+@font-face {
+  font-family: 'MDSystem'; font-style: italic; font-display: swap;
+  font-weight: 500;
+  src: url("mdsystem/MDSystem-MediumItalic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-MediumItalic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+  font-family: 'MDSystem'; font-style: normal; font-display: swap;
+  font-weight: 600;
+  src: url("mdsystem/MDSystem-Dark.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Dark.woff?v=99.99") format("woff");
+}
+@font-face {
+  font-family: 'MDSystem'; font-style: italic; font-display: swap;
+  font-weight: 600;
+  src: url("mdsystem/MDSystem-DarkItalic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-DarkItalic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+  font-family: 'MDSystem'; font-style: normal; font-display: swap;
+  font-weight: 700;
+  src: url("mdsystem/MDSystem-Bold.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Bold.woff?v=99.99") format("woff");
+}
+@font-face {
+  font-family: 'MDSystem'; font-style: italic; font-display: swap;
+  font-weight: 700;
+  src: url("mdsystem/MDSystem-BoldItalic.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-BoldItalic.woff?v=99.99") format("woff");
+}
+
+@font-face {
+  font-family: 'MDSystem'; font-style: normal; font-display: swap;
+  font-weight: 800;
+  src: url("mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+}
+@font-face {
+  font-family: 'MDSystem'; font-style: italic; font-display: swap;
+  font-weight: 800;
+  src: url("mdsystem/MDSystem-Heavy.woff2?v=99.99") format("woff2"), url("mdsystem/MDSystem-Heavy.woff?v=99.99") format("woff");
+}
+
+.typeface-mdsystem { /* for just using the typeface */
+  font-family: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
+}
