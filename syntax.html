@@ -1,0 +1,125 @@
+---
+layout: default
+title: Syntax
+---
+{% include header.html %}
+<main>
+  <section>
+    <h1>Syntax</h1>
+    <p class="headliner">As I work through the basic version of the language I'm using this page as a working document for the syntax and implications of it's design. It's a working document and won't reflect the real Kona for a while.</p>
+  </section>
+  <section>
+    <h2>Identifiers:</h2>
+    <p>Are normalized latin characters, numbers and underscores.</p>
+<pre><code class="kona-code">my_name_is
+SlimSh4Dy
+THIS_IS_A_STRING
+</code></pre>
+    <p>Declaring variables before they are used is unnecessary. Just declare them and use them.</p>
+  </section>
+
+  <section>
+      <h2>Math:</h2>
+      <p>You can do Math in Kona</p>
+<pre><code class="kona-code">5 + 10
+# > 15
+10 / 2
+# > 5
+whatever
+</code></pre>
+    </section>
+    <section>
+      <h2>Types:</h2>
+      <p>There are several primitive types in Kona:</p>
+<pre><code class="kona-code">-- nil, the absence of a value
+nil
+
+-- int
+anInteger = 99 -- an int value
+
+-- float
+aFloat = 19.99
+
+-- string
+aString = "Hi I'm a string"
+
+-- a symbol
+-- It's just a string, but converted to the memory address
+-- of the name, every symbol shares the same address.
+ASymbol = :fantastic
+
+-- Arrays
+friends = ["Collin", "Marco", "Teegan"]
+
+-- Hashes are multi dimensional arrays, with key indexes.
+-- They can also contain arrays. The syntax is the same as JSON.
+aHash = {
+  fantastic: fantastic,
+  "garbled key": nil,
+  age: 99, address: {
+    addr1: "999 overflow dr",
+    addr2:"Salt Lake City UT"
+  }
+}
+
+-- Functions
+aFunction = def (params) print params end
+</code></pre>
+<p>Function declarations can omit params when being declared in a module/class block; in that case a newline character is expected to start the block part of the function. Also in that case a name is required for the function.</p>
+<pre><code class="kona-code">class Cats < Crazy
+  def meow
+    print("meow")
+  end
+end
+
+-- you can store a reference to a function
+myFunctionRef = aFunction.handle
+</code></pre>
+      <p>The <code>.handle</code> syntax is necessary when getting the reference of a function, rather than executing the function when indexing it. Indexing is when you reference an identifier or look up the identifier in an array, hash, or object.</p>
+      <p>The following syntax is equivalent:</p>
+<pre><code class="kona-code">hashy = {cheese: "Cheddar", crackers: "Saltine"}
+print hashy.cheese
+# > Cheddar
+print hashy["crackers"]
+# > Saltine</code></pre>
+    </section>
+    <section>
+      <h2>Indexing:</h2>
+      <p>Indexing is when you lookup a value based on an identifier or key. It's important to cover because, under the hood, Kona is a specialized Lua and Lua is all about Indexing Tables. Remember the code above?</p>
+<pre><code class="kona-code">hashy = {cheese: "Cheddar", crackers: "Saltine"}
+print hashy.cheese
+# > Cheddar
+print hashy["crackers"]
+# > Saltine</code></pre>
+      <p>It checks the hash for the keys as strings in both cases:</p>
+<pre><code class="kona-code">hashy["cheese"]
+hashy["crackers"]</code></pre>
+      <p>Lua is optimized to handle string literals as values really really fast. Under the hood Kona symbols are just converted string values.</p>
+<pre><code class="kona-code">:cheese_curds == "cheese_curds"
+# > true</code></pre>
+      <p>Lua tables, (Lua's ONLY complex amalgam data type), stores string indexes and integer indexes efficiently and separately. Thus giving the illusion of Array's and hashes while only exposing a single data type. Kona's Object literal is a modified and specialized Lua Table. In fact every complex structure in Kona is a modified Lua table with some added sugar to make things easy for us. That's how Kona arrays are implemented:</p>
+<pre><code class="kona-code">favorites = ["Bikes","Graffiti","Logos","Art","Movies","My Kiddos"]
+favorites.0
+# > Bikes
+favorites.count
+# > 6
+favorites[3]
+# > Logos
+favorites["4"]
+# > nil</code></pre>
+      <p>The above <strong>Array Literal</strong> syntax creates an array object, and fills it with my favorite things. It's interpreted as an Array Constructor. Arrays have specials methods to count, sort, and display the contents. Arrays are Number indexed, that is their contents are indexed by an integer in ascending order.</p>
+    </section>
+    <section>
+      <h2>Object literals</h2>
+      <p>We've seen object literals earlier, their made with curly braces:</p>
+<pre><code class="kona-code">best = {movie:"Akira",food: "","Logos","Art","Movies","My Kiddos"}
+      favorites.0
+      # > Bikes
+      favorites.count
+      # > 6
+      favorites[3]
+      # > Logos
+      favorites["4"]
+      # > nil</code></pre>
+    </section>
+</main>
