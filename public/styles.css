@@ -58,7 +58,7 @@ footer nav > a, footer nav > a:visited {margin-left:0rem; margin-right:2rem;colo
 /* Code Styles */
 pre {background:#192535; background: #183153;background:#00347a;
   border-radius: 1rem;padding:1rem;box-sizing:border-box;}
-pre code {font-size:1.25rem;line-height:1.5em;font-family:menlo, monospace !important;font-weight: 500;}
+pre code {font-size:1.25rem;line-height:1.5em;font-family:'MDIO', menlo, monospace !important;font-weight: 500;}
 pre {
   --clr-unformatted:#fff;
   --clr-keyword:    #ff4644;
@@ -93,6 +93,19 @@ changelog > p, changelog > li, changelog > a, changelog > date {font-size: 1.25r
   h1 {font-size: 3rem;}
   h2 {font-size: 2rem;}
   h3 {font-size: 1.5rem;}
+}
+
+/* MD Primer */
+@font-face {
+  font-family: 'MDIO';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/public/mdio/MDIO-Medium.woff2?v=99.99") format("woff2"), url("/public/mdio/MDIO-Medium.woff?v=99.99") format("woff");
+}
+
+.typeface-mdprimer { /* for just using the typeface */
+  font-family: 'MDIO', menlo, monospace !important;
 }
 
 /* MD Primer */
