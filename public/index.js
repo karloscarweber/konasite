@@ -140,9 +140,9 @@ highlightAll({
     "then",      "true",      "until",     "unless",    "when",
     "while"],
   styles: {
-    "unformatted": "font-style: normal; font-weight: 400; color: var(--clr-unformatted)",
+    "unformatted": "font-style: normal; font-weight: 500; color: var(--clr-unformatted)",
     "keyword":     "font-style: normal; font-weight: 500; color: var(--clr-keyword)",
-    "punctuation": "font-style: normal; font-weight: 600; color: var(--clr-punctuation)",
+    "punctuation": "font-style: normal; font-weight: 500; color: var(--clr-punctuation)",
     "string":      "font-style: normal; font-weight: 500; color: var(--clr-string)",
     "comment":     "font-style: normal; font-weight: 500; color: var(--clr-comment)",
   },
