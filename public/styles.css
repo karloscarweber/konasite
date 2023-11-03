@@ -56,7 +56,7 @@ a:visited { color: var(--nasa-orange); }
 footer nav > a, footer nav > a:visited {margin-left:0rem; margin-right:2rem;color:white;}
 
 /* Code Styles */
-pre {background:#192535; background: #183153;background:#00347a;
+pre {background:#192535; background: #183153;background:#00347a;background:#0A358C;
   border-radius: 1rem;padding:1rem;box-sizing:border-box;}
 pre code {font-size:1.25rem;line-height:1.5em;font-family:'MDIO', menlo, monospace !important;font-weight: 500;}
 pre {
@@ -64,6 +64,12 @@ pre {
   --clr-keyword:    #ff4644;
   --clr-punctuation:#16db20;
   --clr-string:     #fbdf00;
+  --clr-comment:    #768089;
+
+  --clr-unformatted:#D2DCE3;
+  --clr-keyword:    #EB564D;
+  --clr-punctuation:#00FF9C;
+  --clr-string:     #E7D26C;
   --clr-comment:    #768089;
   overflow-x:scroll;
 }
