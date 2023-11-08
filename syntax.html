@@ -112,14 +112,24 @@ favorites["4"]
     <section>
       <h2>Object literals</h2>
       <p>We've seen object literals earlier, their made with curly braces:</p>
-<pre><code class="kona-code">best = {movie:"Akira",food: "","Logos","Art","Movies","My Kiddos"}
-      favorites.0
-      # > Bikes
-      favorites.count
-      # > 6
-      favorites[3]
-      # > Logos
-      favorites["4"]
-      # > nil</code></pre>
+<pre><code class="kona-code">best = {movie:"Akira",food: "Pizza","Logos","Art","Movies","My Kiddos"}
+best.0
+# > Logos
+best.count
+# > 4
+best[Movies]
+# > Logos
+best["4"]
+# > My Kiddos</code></pre>
+      <p>The above <strong>Object Literal</strong> syntax creates an Object. It inherits the data and or functions as described in the literal. Curiously, because Kona has a concept of Children of objects, Members/properties/data that are added without keys are added to the children Array of the Object. You can add HTML directly to an Object literal as well:</p>
+<pre><code class="kona-code">thing = {name:"Akira",food:"Pizza", <p>This is a paragraph tag</p>,<p>This is another paragraph tag</p>,<form><input type="text" name="whatever"></form>,"Movies","My Kiddos"}
+best.0
+# > Logos
+best.count
+# > 4
+best[Movies]
+# > Logos
+best["4"]
+# > My Kiddos</code></pre>
     </section>
 </main>

@@ -5,7 +5,7 @@ html {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5em;
-  background-color: #F2F2EB;
+  background-color: #F8EED8;
   --font-mdsystem: 'MDSystem', -apple-system, Helvetica, Arial, sans-serif;
   --font-mdprimer: 'MDPrimer', -apple-system, Helvetica, Arial, sans-serif;
   --nasa-blue:  #3A4AC3;
@@ -15,6 +15,7 @@ html {
   --nasa-orange:var(--nasa-red);
   --nasa-dark:  #1B2EC1;
   --nasa-dark:  #152498;
+  --nasa-ocean: #25569A;
   box-sizing: border-box;
   margin:0;
   padding:0;
@@ -31,7 +32,7 @@ columns > * {flex-grow: 1;}
 well {display: flex; flex-direction: column;padding: 1.5rem;border:2px solid var(--nasa-blue);border-radius: 12px;}
 well > :first-child {margin-top:0;}
 well > :last-child {margin-bottom:0;}
-footer {display:flex;height: 30rem;background:var(--nasa-blue);color: white;border-radius:0px 0px 10px 10px;}
+footer {display:flex;height: 30rem;background:var(--nasa-ocean);color: white;border-radius:0px 0px 10px 10px;}
 footer > section {display:flex;flex-direction: column-reverse;}
 
 /* Header/menu styles*/
@@ -56,8 +57,8 @@ a:visited { color: var(--nasa-orange); }
 footer nav > a, footer nav > a:visited {margin-left:0rem; margin-right:2rem;color:white;}
 
 /* Code Styles */
-pre {background:#192535; background: #183153;background:#00347a;background:#0A358C;
-  border-radius: 1rem;padding:1rem;box-sizing:border-box;}
+pre {background:#192535; background: #183153;background:#00347a;background:#0A358C; background: #F2F2EB;
+  border-radius: 1rem;padding:1rem;box-sizing:border-box;border: 1px solid #D2D2D2}
 pre code {font-size:1.25rem;line-height:1.5em;font-family:'MDIO', menlo, monospace !important;font-weight: 500;}
 pre {
   --clr-unformatted:#fff;
@@ -70,6 +71,12 @@ pre {
   --clr-keyword:    #EB564D;
   --clr-punctuation:#00FF9C;
   --clr-string:     #E7D26C;
+  --clr-comment:    #768089;
+
+  --clr-unformatted:#1D1F1E;
+  --clr-keyword:    #C84936;
+  --clr-punctuation:#2B78E4;
+  --clr-string:     #FC800E;
   --clr-comment:    #768089;
   overflow-x:scroll;
 }
